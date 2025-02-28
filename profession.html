@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guide | Your Path to Success</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    
+    /* About Section */
+    .about {
+      padding: 50px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 28px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .services ul li {
+      margin: 10px 0;
+    }
+
+    
+
+    /* Contact Form Section */
+contact {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact form button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+    }/* Typing Text Animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes caret {
+  from { border-right: 3px solid white; }
+  to { border-right: none; } /* Caret disappears after typing */
+}
+
+.typing-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white; /* Caret while typing */
+  width: 100%;  /* Ensure full width after typing */
+  animation: typing 4s steps(30, end), caret 0.5s 4s forwards; /* Caret disappears after typing */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header style="background-color: #19485F;color: #D9E0A4;">
+    <h1>Career Guide</h1>
+    <p class="typing-text" >Your Path to a Better Career Starts Here</p>
+  </header>
+
+  
+
+  <!-- Services Section -->
+  <section class="services" style="background-color: #D9E0A4;color: #19485F;">
+    <h2>Services</h2>
+    <ul>
+      <li>Career Coaching & Strategy</li>
+      <li>Resume Review & Optimization</li>
+      <li>Interview Preparation</li>
+      <li>Personal Branding & LinkedIn Optimization</li>
+    </ul>
+  </section>
+  <main class="container" >
+    <section id="professions" style="background-color: #19485F;color: #D9E0A4;">
+        <h2>Career Paths</h2>
+        <div class="profession" onclick="showDetails('doctor')">
+            <h3>Doctor</h3>
+            <p>Click for more information...</p>
+        </div>
+        <div class="profession" onclick="showDetails('engineer')">
+            <h3>Engineer</h3>
+            <p>Click for more information...</p>
+        </div>
+        <div class="profession" onclick="showDetails('lawyer')">
+            <h3>Lawyer</h3>
+            <p>Click for more information...</p>
+        </div>
+        <div class="profession" onclick="showDetails('athlete')">
+            <h3>Athlete</h3>
+            <p>Click for more information...</p>
+        </div>
+
+    </section>
+    <section id="details"style="background-color: #D9E0A4;color: #19485F;">
+        <h2>Details</h2>
+        <div id="detail-content"></div>
+    </section>
+
+  <!-- Testimonials Section -->
+
+
+  <!-- Contact Form Section -->
+  
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Connect with me: [Your Email] | [Social Media Links]</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
